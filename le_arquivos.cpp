@@ -1,7 +1,6 @@
 #include <iostream>
-#include <vector>
-#include <string>
 #include <fstream>
+#include "le_arquivos.hpp"
 
 
 std::vector<std::string> le_arquivos()

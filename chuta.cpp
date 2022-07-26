@@ -4,8 +4,8 @@
 #include <vector>
 #include "letra_existe.hpp"
 
-std::map<char, bool> chutou;
-std::vector<char> chutes_errados;
+extern std::map<char, bool> chutou;
+extern std::vector<char> chutes_errados;
 
 
 void chuta()

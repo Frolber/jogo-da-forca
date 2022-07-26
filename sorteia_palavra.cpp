@@ -3,7 +3,7 @@
 #include <ctime>
 #include "le_arquivos.hpp"
 
-std::string palavra_secreta;
+extern std::string palavra_secreta;
 
 void sorteia_palavra()
 {
