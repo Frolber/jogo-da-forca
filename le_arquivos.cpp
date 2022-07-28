@@ -2,6 +2,7 @@
 #include <fstream>
 #include "le_arquivos.hpp"
 
+/* Fazer leitura de arquivo de palavras e retorna vector com palavras para o jogo funcionar */
 
 std::vector<std::string> le_arquivos()
 {

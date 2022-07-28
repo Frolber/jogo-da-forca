@@ -1,14 +1,8 @@
 #include <iostream>
-#include <string>
-#include <map>
-#include <vector>
 #include "letra_existe.hpp"
+#include "chuta.hpp"
 
-extern std::map<char, bool> chutou;
-extern std::vector<char> chutes_errados;
-
-
-void chuta()
+void chuta(std::map<char, bool>& chutou, std::vector<char>& chutes_errados, std::string& palavra_secreta)
 {
    std::cout << "Qual a letra que tem na palavra acima? ";
    char chute;
@@ -16,10 +10,10 @@ void chuta()
    chute = toupper(chute);
    std::cout << std::endl;
 
-   chutou[chute] = true; /*Todas letras dos chutes vão receber true no quesito de saber se já foram chutadas.*/
+	chutou[chute] = true; /*Todas letras dos chutes vão receber true no quesito de saber se já foram chutadas.*/
 
    /* Avisa ao jogador se acertou ou errou o chute. Se errou, guarda o erro no vector chutes_errados*/
-   if (letra_existe(chute))
+   if (letra_existe(chute, palavra_secreta))
    {
       std::cout << "Você acertou! Seu chute está na palavra!" << std::endl;
    }

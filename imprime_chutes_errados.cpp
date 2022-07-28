@@ -1,9 +1,7 @@
 #include <iostream>
-#include <vector>
+#include "imprime_chutes_errados.hpp"
 
-extern std::vector<char> chutes_errados;
-
-void imprime_chutes_errados()
+void imprime_chutes_errados(const std::vector<char>& chutes_errados)
 {
    std::cout << "Chutes errados: ";
    for (char letra : chutes_errados)

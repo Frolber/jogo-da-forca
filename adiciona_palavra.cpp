@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include "adiciona_palavra.hpp"
 #include "le_arquivos.hpp"
 #include "salva_arquivo.hpp"
 
